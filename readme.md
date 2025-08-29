@@ -1,4 +1,5 @@
 Question no 1 
+
     the differences are given below:
         getElementById():
             1.Select an element with an id.
@@ -22,13 +23,16 @@ Question no 1
             3.Returns a Nodelist.
             4.It can go through loop.
 Question no 2
+
             element is created by createElement().And inserted by appendChild() method.
             Ex.  div.appendChild(document.createElement('p'));
 
 Question no 3
+
             Event bubbling is a mechanism in the DOM event where an event starts at the deepest target element and then bubbles up to its ancestors.When an event is fired on the child it bubbles up to it's parent then again it bubbles up to it's parent(grandparent) then it will be bubbled to document and then to window.
 
 Question no 4
+
             Event delegation is a technique to add an event listener to the parent element instead of adding to child element.
 
             It is useful for:
@@ -38,6 +42,7 @@ Question no 4
             4.Easier to manage.
 
 Question no 5
+
             event.preventDefault():
             1.Prevents the browser's default action for that event.
             2.It does NOT stop the event from bubbling.
