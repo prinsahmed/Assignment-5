@@ -31,24 +31,34 @@ const callGenarated = document.getElementsByClassName('callname');
                             'Bangladesh Railway Helpline'
                          ]
 
-            const Number = [999, 999, 999, 1994999999, 109, 106, 16216, 16445,
-                163 
+            const Number = ['999', '999', '999', '1994-999999', '109', '106', '16216', '16445',
+                '163' 
             ]             
 
-         const div = document.createElement('div');
+            const div = document.createElement('div');
+            const div2 = document.createElement('div');
+            const div3 = document.createElement('div');
             const h2 = document.createElement('h2');
-            h2.innerText = Name[i];
             const h3 = document.createElement('h3');
+            let time = document.createTextNode(new Date().toLocaleTimeString());
+            console.log(time)
+            h2.innerText = Name[i];
             h3.innerText = Number[i];
-            div.appendChild(h2);
-            div.appendChild(h3);
+            div.appendChild(div2);
+            div.appendChild(div3);
+            div3.appendChild(time)
+            div2.appendChild(h2);
+            div2.appendChild(h3);
             const classs = document.getElementById('call-list');
             classs.appendChild(div);
-            div.classList.add('p-2', 'text-white', 'mt-3', 'rounded-xl', 'bg-[#74b9ff]')
-            h2.classList.add('text-lg')
+            div.classList.add('p-2', 'mt-3', 'rounded-xl', 'bg-[#d6dfe6]', 'shadow-md')
+            div.classList.add('flex', 'justify-between', 'items-center')
+            h2.classList.add('text-md', 'font-bold')
+            
+            
             
                          alert(
-                            `Calling ${Name[i]} ${Number[i]}`
+                            `📞 Calling...  ${Name[i]} ${Number[i]}`
                          )}
         else{
             alert('Insufficient Credit')
@@ -69,6 +79,26 @@ const copyCounter = document.getElementsByClassName('copy');
         let copyCounter = parseInt(document.getElementById('copycntr').innerText);
         copyCounter++;
        document.getElementById('copycntr').innerText = copyCounter ;
-    
+
+
 });
  }
+
+// part 2
+ function copyFunction(i){
+        let textToCopy = document.getElementsByClassName('copying');
+     let text = textToCopy[i].innerText;
+     navigator.clipboard.writeText(text);
+     alert(`👩‍💻 Hotline number  ${text} is copied.`);
+ 
+     }
+
+let btn = document.getElementsByClassName('copy');
+     for(let i = 0; i < btn.length ; i++){
+        btn[i].addEventListener('click', function(){
+            copyFunction(i);
+        })
+     }
+
+     
+    
