@@ -1,165 +1,47 @@
-## WELCOME TO ( সহজ সরল সিম্পল ) ASSIGNMENT-005
+<!-- Question no 1  -->
+    the differences are given below:
+        getElementById():
+            1.Select an element with an id.
+            2.Returns an array like single element object.
+            3.It can not go through loop.
+            
+        getElementsByClassName():
+            1.Select elements which contains same class name.
+            2.Returns an array like object HTML Collection;
+            3.It can go through loop.
+        
+        querySelector():
+            1.It selects the first element which contains the CSS selector.
+            2.It needs CSS selector to select.
+            3.Returns a single element object.
+            4.It can not go through loop.
 
-### 📅 Deadline For 60 marks: 29th August, 2025 (11:59 pm ⏱️)
+        querySelectorAll:
+            1.Selects all elements which have same class name.
+            2.CSS selector is used.
+            3.Returns a Nodelist.
+            4.It can go through loop.
+<!-- Question no 2 -->
+            element is created by createElement().And inserted by appendChild() method.
+            Ex.  div.appendChild(document.createElement('p'));
 
-### 📅 No Deadline For 50 marks
+<!-- Question no 3 -->
+            Event bubbling is a mechanism in the DOM event where an event starts at the deepest target element and then bubbles up to its ancestors.When an event is fired on the child it bubbles up to it's parent then again it bubbles up to it's parent(grandparent) then it will be bubbled to document and then to window.
 
-### 📅 Deadline For 30 marks: Any time after 29th August.
+<!-- Question no 4 -->
+            Event delegation is a technique to add an event listener to the parent element instead of adding to child element.
 
----
+            It is useful for:
+            1.Increase the performance.
+            2.Reduce the complexity.
+            3.Saves memory.
+            4.Easier to manage.
 
-## ✅ Main Requirements (50 Marks)
+<!-- Question no 5 -->
+            event.preventDefault():
+            1.Prevents the browser's default action for that event.
+            2.It does NOT stop the event from bubbling.
 
-### 1. Navbar
-
-- **Website name & logo** on the left as Figma
-- **Heart icon, coin count (default-100), and Copy Count** on the right as Figma
-
----
-
-### 2. Hero Section
-
-- **Background Gradient** in the Whole Section
-- **A Relevant Logo** at the top-center
-- **Section Title** in the center
-- **A Relevant Slogan** in the bottom Center
-
----
-
-### 2. Main Section
-
-This Section will have layout as figma
-
-<table border=1 width="100%" cellpadding="50">
-<tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
- </tr>
- <tr>
-    <td colspan=9 >Card Section</td>
-    <td colspan=3>History Section</td>
- </tr>
-</table>
-
-### Emergency Hotline Section
-
-- **Show Minimum 6 cards**. Each card will contain:
-  - Icon or Image
-  - Relevant Name
-  - Relevant Name in English
-  - Hotline number for calling
-  - Category Badge
-  - 💗 icon at left
-  - **2 buttons** at the bottom: Copy and Call with icons as Figma
-
-### History Section
-
-- **A white Background** in the whole section
-- **History Title with icon** at the top-left as Figma
-- **Clear History Button** at the top-right as Figma
-
----
-
-### 3. Responsiveness (5 Marks)
-
-- Website should be fully **responsive for mobile devices** (implementation up to you)
-
----
-
-## Functionalities
-
-### 4. Heart Icons
-
-- Clicking on the 💗 **heart icon** of any card will increase the count in the Navbar
-
----
-
-### 5. Call Buttons
-
-- On clicking a card's **Call Button**, following actions will happen:
-  - Show an **alert** with a message including the service name and number
-  - Each call will **cut 20 coins**. Reduce Coin after each click.
-  - If coins are less than 20, show a relevant alert and terminate the process.
-  - Add this service into the **Call History section** with:
-    - Service name
-    - Service number
-
----
-
-### 5. Call History Section
-
-- Show all called services with name & number. This will empty initially. when call button clicked it will filled dynamically.
-- A **Clear History button** on the right
-- Clicking this button will remove all data from call history
-
----
-
-## Create Readme
-
-You have to create a `Readme.md` file. and write down following questions. Dont Try to copy paste from AI Tools. Just write what you know about these. If you don't know , then search , learn , understand and then write.
-
-### 6. Answer the following questions clearly:
-
-1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
-2. How do you **create and insert a new element into the DOM**?
-3. What is **Event Bubbling** and how does it work?
-4. What is **Event Delegation** in JavaScript? Why is it useful?
-5. What is the difference between **preventDefault() and stopPropagation()** methods?
-
----
-
-## 🧪 Challenges Part (10 Marks)
-
-- On clicking the **Copy button**, show an alert and **increase the copy count** (3 Marks)
-
-- Hotline number will be **copied on click** so it can be pasted anywhere (4 Marks)
-
-💡Hint: You can ask for Help from `ChatGPT` Mamma . Just copy the below prompt , generate answer. use it with your own way.
-
-```bash
-I have a card with some text and a button inside it. I want that when a user clicks the button, some specific text from the card is copied to the clipboard using JavaScript. Please provide the code and explain it step by step.
-```
-
-- After clicking on the **Call button**, the **exact time of the call** will be shown in the Call History section (3 Marks)
-
-💡Hint: Search Google with that below question
-
-```bash
-How to get current local time in js
-```
-
----
-
-## ⚙️ Technology Stack
-
-- HTML
-- CSS ( Vanilla , Tailwind CSS , DaisyUI , Others - wheatever you like )
-- JavaScript ( Vanilla only. No Framework / Library Allowed )
-
----
-
-## 📌 Rules
-
-- ✅ Minimum **5 meaningful commits** required
-- ❌ No Lorem Ipsum or dummy placeholder text. Use **relevant content only**
-
----
-
-## 🔗 What to Submit
-
-- 📂 **GitHub Repository**
-- 🌐 **Live Link**
-
----
-
-# Let's Code and Achieve your Dream 🎯
+            event.stopPropagation():
+            1.Stops the event from bubbling any further in the DOM tree.
+            2.It does not stop the default browser behavior.
